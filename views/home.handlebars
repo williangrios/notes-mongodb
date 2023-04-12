@@ -1,4 +1,4 @@
-<h1>Suas notas</h1>
+<h1>Your</h1>
 <table class="table">
     <thead>
         <tr>
@@ -13,10 +13,10 @@
             <th scope="row">{{@index}}</th>
             <th class="title-column"><a href="notes/{{this._id}}">{{this.title}}</a></th>
             <th class="actions-column">
-                <a href="notes/edit/{{this._id}}" class="btn btn-primary">Editar</a>
+                <a href="notes/edit/{{this._id}}" class="btn btn-primary">Edit</a>
                 <form action="notes/delete" method="POST">
                     <input type="hidden" name="id" value="{{this._id}}">
-                    <input type="submit" class="btn btn-danger" value="Remover">
+                    <input type="submit" class="btn btn-danger" value="Delete">
                 </form>
             </th>
         </tr>
